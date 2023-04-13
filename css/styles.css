@@ -10,6 +10,9 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10835,8 +10838,8 @@ body {
   height: 100%;
 }
 
-.page-section-about{
-  padding: 6rem 0;
+.page-section-technology{
+  padding: 3rem 0;
 }
 
 .page-section {
