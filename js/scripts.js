@@ -56,4 +56,23 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+
+    //JavaScript code to send email upon form submission
+
+      const form = document.getElementById("contactForm");
+      const submitButton = document.getElementById("submitButton");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+        const subject = "NeuroLyze Contact Form";
+        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
+        const mailToLink = `mailto:neurolyze@outlook.com?subject=${subject}&body=${body}`;
+        window.location.href = mailToLink;
+        submitButton.innerText = "Message Sent";
+        submitButton.disabled = true;
+      });
+ 
 });
